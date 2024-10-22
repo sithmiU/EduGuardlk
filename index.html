@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGuard</title>
+    <link rel="stylesheet" href="styles/index_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo_header.png">
+    
+                
+
+
+</head>
+<body>
+    <header class="sticky-header">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Your Logo">
+               
+            </div>
+
+
+            <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search..." />
+            <i id="searchIcon" class="fas fa-search"></i>
+        </div>
+
+
+            <ul>
+                <li><a href="#top" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- Dropdown for Project -->
+                <li class="dropdown">
+                    <a href="project.html#project">Project <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-column">
+                            <a href="project.html#research_problem">Research Problem</a>
+                            
+                            <a href="project.html#objectives">Objectives</a>
+                            <a href="project.html#literature">Literature</a>
+                        </div>
+                        <div class="dropdown-column">
+                            
+                            <a href="project.html#methodology">Methodology</a>
+                            <a href="project.html#milestones">Milestones</a>
+                            <a href="project.html#documents">Documents</a>
+                        </div>
+                    </div>
+                </li>
+                
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <section id="top" class="hero">
+        <div class="hero-content">
+            <br> <br>
+            <h1>Empowering you with Knowledge,<br>Safety, and Support through<br>
+            <span style="color: #37BE9E;">EduGuard</span></h1><br>
+            <h3>Explore a mobile application offering a platform for Sex Education,<br>
+                Sexual Harassment Reporting, Sex-Related Blogs and Questionnaires,<br>
+                and Sexual Health Management tailored for <span style="color: #37BE9E; font-weight: 600;">Sri Lanka</span>.</h3>
+            
+            
+            <br><br><br>
+           
+             <a href="project.html#project" class="cta-button">View More</a>  
+            
+            
+        </div>
+    </section>
+
+    <section id="about" class="scope">
+        <div class="about-column1">
+            <div class="about-left">
+                <img src="images/about_img1.png" alt="About EduGuard" class="about-image1" />
+            </div>
+    
+            <div class="about-right">
+                <h1 class="centered-title">About EduGuard</h1><br>
+                <p>EduGuard is a groundbreaking mobile application designed to enhance sexual health education 
+                    and promote safety through innovative technology. <br><br>
+                    In a society where open discussions about sex education and harassment can be challenging, 
+                    EduGuard fills a crucial gap by providing a secure, age-appropriate platform for users to 
+                    access vital information and report sensitive issues.</p>
+                <br>
+                <p><span style="color: #37BE9E; font-weight: 600;">Our mission</span> is to empower individuals in Sri Lanka by integrating advanced technologies that address both educational and safety needs.</p>
+                <br>
+                <ul class="icon-list">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        Comprehensive Approach to Sexual Well-Being
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        Technology-Driven Solution
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        Culturally Tailored for Sri Lanka
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        Accessible Anytime, Anywhere
+                    </li>
+                </ul>
+            </div>       
+        </div>
+
+
+        <div class="features-container">
+            <h1 class="centered-title">Key Features</h1>
+            <h4>The four main functions that shape EduGuard's core purpose and capabilities</h4><br><br>
+        
+            <div class="features">
+                <div class="feature">
+                    <img src="images/f-education.png" alt="Feature 1">
+                    <div class="feature-details">
+                        <h2>Sex Education Platform</h2>
+                        <p>Delivers age-appropriate content through face recognition technology, ensuring individuals receive the knowledge they need based on their developmental stage.</p>
+                    </div>
+                    <a href="project.html#objectives" class="read-more">
+                        Read More <i class="arrow-icon fas fa-arrow-right"></i> <!-- Use Font Awesome for the arrow icon -->
+                    </a>
+                </div>
+        
+                <div class="feature">
+                    <img src="images/f-haressment.png" alt="Feature 2">
+                    <div class="feature-details">
+                        <h2>Sexual Harassment Reporting</h2>
+                        <p>Leverages advanced voice recognition technology for real-time, confidential reporting of sexual harassment, enabling users to seek help safely and promptly.</p>
+                    </div>
+                    <a href="project.html#objectives" class="read-more">
+                        Read More <i class="arrow-icon fas fa-arrow-right"></i> <!-- Use Font Awesome for the arrow icon -->
+                    </a>
+                </div>
+        
+                <div class="feature">
+                    <img src="images/f-blogs.png" alt="Feature 3">
+                    <div class="feature-details">
+                        <h2>Blogs and Questionnaire</h2>
+                        <p>Creates a supportive and respectful space for discussions on sexual health, utilizing Natural Language Processing (NLP) to filter out inappropriate content effectively.</p>
+                    </div>
+                    <a href="project.html#objectives" class="read-more">
+                        Read More <i class="arrow-icon fas fa-arrow-right"></i> <!-- Use Font Awesome for the arrow icon -->
+                    </a>
+                </div>
+        
+                <div class="feature">
+                    <img src="images/f-std.png" alt="Feature 4">
+                    <div class="feature-details">
+                        <h2>Sexual Health Platform</h2>
+                        <p>Employs image processing technology to help users assess symptoms of sexually transmitted diseases (STDs) and offers relevant clinic recommendations if detected.</p>
+                    </div>
+                    <a href="project.html#objectives" class="read-more">
+                        Read More <i class="arrow-icon fas fa-arrow-right"></i> <!-- Use Font Awesome for the arrow icon -->
+                    </a>
+                </div>
+            </div>   
+        </div>
+        
+
+        <div class="about-column2">
+            <div class="about-right">
+                <h1 class="centered-title">Who Benefits from EduGuard</h1><br>
+                <p>EduGuard caters to a wide and diverse audience in Sri Lanka, including children, teens, 
+                    adults, married and unmarried individuals, and both educated and non-educated groups. <br><br>
+                    Specifically designed to offer support to those who may face social stigma or 
+                    financial barriers in accessing healthcare.<br><br>
+                    Individuals from all walks of life can access vital information and services in various 
+                    settings such as schools, workplaces, and public spaces.
+                </p>
+                <br>
+                <ul class="icon-list">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        Broad Audience Inclusion
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        Equitable Access and Affordability
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        Holistic and Dependable Solution
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        Community-Centric Impact
+                    </li>
+                </ul>
+            </div>  
+            
+            <div class="about-left">
+                <img src="images/about_img2.png" alt="About EduGuard" class="about-image2" />
+            </div>     
+        </div> 
+    </section>
+    
+
+
+
+
+
+
+
+
+<section id="technologies" class="technologies-section">
+    <h1>Technologies</h1>
+    <h4>The range of modern technologies used to build our innovative solution</h4><br><br>
+    <div class="technologies-grid">
+        <div class="tech-item">
+            <img src="images/python.svg" alt="python">
+            <p>Python</p>
+        </div>
+        <div class="tech-item">
+            <img src="images/tensorflow.svg" alt="tensorflow">
+            <p>Tensorflow</p>
+        </div>
+        <div class="tech-item">
+            <img src="images/keras.svg" alt="keras">
+            <p>Keras</p>
+        </div>
+        <div class="tech-item">
+            <img src="images/jupyter.svg" alt="jupyter">
+            <p>Jupyter Notebook</p>
+        </div>
+        <div class="tech-item">
+            <img src="images/flask.svg" alt="flask">
+            <p>Flask</p>
+        </div>
+        <div class="tech-item">
+            <img src="images/flutter.svg" alt="flutter">
+            <p>Flutter</p>
+        </div>
+        <div class="tech-item">
+            <img src="images/vscode.svg" alt="vscode">
+            <p>VS Code</p>
+        </div>
+        <div class="tech-item">
+            <img src="images/android.svg" alt="androidstudio">
+            <p>Android Studio</p>
+        </div>
+        <div class="tech-item">
+            <img src="images/aws.svg" alt="aws">
+            <p>AWS</p>
+        </div>
+        <div class="tech-item">
+            <img src="images/firebase.svg" alt="firebase">
+            <p>Firebase</p>
+        </div>
+        <div class="tech-item">
+            <img src="images/github.svg" alt="github">
+            <p>GitHub</p>
+        </div>
+        
+        <div class="tech-item">
+            <img src="images/figma.svg" alt="figma">
+            <p>Figma</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section id="team" class="about-section">
+    
+
+    <div class="team-row">
+        <div class="team-text">
+            <br>
+            <h1>Our Team of Supervisors &<br>Group Members</h1><br>
+    <h4>Meet the talented supervisors and group members <br>who bring diverse expertise and passion <br>to our project.</h4><br><br>
+        </div>
+
+        <div class="team-members">
+            <!-- First Row (Supervisors) -->
+            <div class="team-member supervisor">
+                <div class="member-image">
+                    <img src="images/supervisor.png" alt="Supervisor 1">
+                </div>
+                <h5 class="member-title">Supervisor</h5>
+                <h3 class="member-name">Ms. Uthpala Samarakoon</h3>
+                <h6 class="member-degree">Senior Lecturer at Department of Information Technology, Faculty of Computing</h6>
+                <h6 class="member-degree">SLIIT, Sri Lanka</h6>
+                <div class="member-email"><a href="mailto:uthpala.s@sliit.lk">uthpala.s@sliit.lk</a></div>
+            </div>
+
+            <div class="team-member supervisor">
+                <div class="member-image">
+                    <img src="images/co-supervisor.png" alt="Supervisor 2">
+                </div>
+                <h5 class="member-title">Co-Supervisor</h5>
+                <h3 class="member-name">Ms. Dinithi Pandithage</h3>
+                <h6 class="member-degree">Lecturer at Department of Computer Systems Engineering, Faculty of Computing</h6>
+                <h6 class="member-degree">SLIIT, Sri Lanka</h6>
+                <div class="member-email"><a href="mailto:dinithi.p@sliit.lk">dinithi.p@sliit.lk</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row (Team Members) -->
+    <div class="team-members second-row">
+        <div class="team-member">
+            <div class="member-image">
+                <img src="images/leader.png" alt="Member 3">
+            </div>
+            <h5 class="member-title">Team Leader</h5>
+            <h3 class="member-name">H.M.S.E. Henarath</h3>
+            <h6 class="member-degree">Undergraduate at Department of Information Technology, Faculty of Computing</h6>
+            <h6 class="member-degree">SLIIT, Sri Lanka</h6>
+            <div class="member-email"><a href="mailto:it20025212@my.sliit.lk">it20025212@my.sliit.lk</a></div>
+        </div>
+        <div class="team-member">
+            <div class="member-image">
+                <img src="images/member2.png" alt="Member 4">
+            </div>
+            <h5 class="member-title">Team Member</h5>
+            <h3 class="member-name">D.N.M. Perera</h3>
+            <h6 class="member-degree">Undergraduate at Department of Information Technology, Faculty of Computing</h6>
+            <h6 class="member-degree">SLIIT, Sri Lanka</h6>
+            <div class="member-email"><a href="mailto:it20013264@my.sliit.lk">it20013264@my.sliit.lk</a></div>
+        </div>
+        <div class="team-member">
+            <div class="member-image">
+                <img src="images/member3.png" alt="Member 5">
+            </div>
+            <h5 class="member-title">Team Member</h5>
+            <h3 class="member-name">O.G.K.G. Perera</h3>
+            <h6 class="member-degree">Undergraduate at Department of Information Technology, Faculty of Computing</h6>
+            <h6 class="member-degree">SLIIT, Sri Lanka</h6>
+            <div class="member-email"><a href="mailto:it20110734@my.sliit.lk">it20110734@my.sliit.lk</a></div>
+        </div>
+        <div class="team-member">
+            <div class="member-image">
+                <img src="images/member4.png" alt="Member 6">
+            </div>
+            <h5 class="member-title">Team Member</h5>
+            <h3 class="member-name">U.R.S.N. Udapolawatta</h3>
+            <h6 class="member-degree">Undergraduate at Department of Information Technology, Faculty of Computing</h6>
+            <h6 class="member-degree">SLIIT, Sri Lanka</h6>
+            <div class="member-email"><a href="mailto:it20253158@my.sliit.lk">it20253158@my.sliit.lk</a></div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h1>Contact Us</h1>
+    <p>Whether you're looking for more information about our project or need support, feel free to reach out to us using the following methods. <br>Our team is here to answer your questions and ensure you have everything you need.</p><br><br> 
+    <div class="contact-cards">
+        <div class="contact-card">
+            <img src="images/email.png" alt="Email Icon" class="contact-icon">
+            <div class="contact-info">
+                <h3>Email</h3>
+                <p><a href="mailto:cdap24.141@gmail.com">cdap24.141@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="contact-card">
+            <img src="images/location.png" alt="Location Icon" class="contact-icon">
+            <div class="contact-info">
+                <h3>Location</h3>
+                <p><a href="https://www.google.com/maps/dir//SLIIT+Malabe+Campus,+New+Kandy+Rd,+Malabe+10115/@6.9146704,79.8905426,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ae256db1a6771c5:0x2c63e344ab9a7536!2m2!1d79.9729445!2d6.9146775?entry=ttu" id="location-link">SLIIT, New Kandy Road, Malabe, Sri Lanka</a></p>
+            </div>
+        </div>
+        
+        <div class="contact-card">
+            <img src="images/call.png" alt="Call Icon" class="contact-icon">
+            <div class="contact-info">
+                <h3>Phone</h3>
+                <p><a href="tel:+94715148603">+94 715 148 603</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-leftside">
+                    <img src="images/logo2.png" alt="EduGuard Logo" class="footer-logo">
+                    <p class="footer-description">
+                    EduGuard is committed to enhancing educational experiences through advanced technology solutions. Our platform offers reliable, data-driven insights and tools to foster a safe and supportive learning environment.
+                    </p>
+                </div>
+                <br>
+                <div class="social-links">
+                    
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-right">
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#technologies">Technologies</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="quick-links">
+                    <h3>About Project</h3>
+                    <ul>
+                        <li><a href="project.html#research_problem">Research Problem</a></li>
+                        <li><a href="project.html#objectives">Objectives</a></li>
+                        <li><a href="project.html#methodology">Methodology</a></li>
+                        <li><a href="project.html#milestones">Milestones</a></li>
+                        <li><a href="project.html#documents">Documents</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 EduGuard, All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+      <!-- Floating Scroll to Top Button -->
+<button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+
+      
+    <script src="scripts/index_script.js"></script>
+
+</body>
+</html>
