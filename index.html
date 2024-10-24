@@ -14,48 +14,50 @@
 
 </head>
 <body>
+
+
+    
+
     <header class="sticky-header">
         <nav>
             <div class="logo">
                 <img src="images/logo.png" alt="Your Logo">
-               
             </div>
-
-
+    
             <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Search..." />
-            <i id="searchIcon" class="fas fa-search"></i>
-        </div>
-
-
-            <ul>
+                <input type="text" id="searchInput" placeholder="Search..." />
+                <i id="searchIcon" class="fas fa-search"></i>
+            </div>
+    
+            <ul class="nav-menu">
                 <li><a href="#top" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <!-- Dropdown for Project -->
                 <li class="dropdown">
-                    <a href="project.html#project">Project <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                    <a href="project.html#project">Project</a>
                     <div class="dropdown-content">
+                        <!-- Dropdown items -->
                         <div class="dropdown-column">
                             <a href="project.html#research_problem">Research Problem</a>
-                            
                             <a href="project.html#objectives">Objectives</a>
                             <a href="project.html#literature">Literature</a>
                         </div>
                         <div class="dropdown-column">
-                            
                             <a href="project.html#methodology">Methodology</a>
                             <a href="project.html#milestones">Milestones</a>
                             <a href="project.html#documents">Documents</a>
                         </div>
                     </div>
                 </li>
-                
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            
+    
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
+
 
     <section id="top" class="hero">
         <div class="hero-content">

@@ -14,48 +14,52 @@
 
 </head>
 <body>
+
     <header class="sticky-header">
         <nav>
             <div class="logo">
                 <img src="images/logo.png" alt="Your Logo">
-               
             </div>
-
-
+    
             <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Search..." />
-            <i id="searchIcon" class="fas fa-search"></i>
-        </div>
-
-
-        <ul>
-            <li><a href="index.html#top" >Home</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <!-- Dropdown for Project -->
-            <li class="dropdown">
-                <a href="#project" class="active">Project <i class="fas fa-chevron-down dropdown-icon"></i></a>
-                <div class="dropdown-content">
-                    <div class="dropdown-column">
-                        <a href="#research_problem">Research Problem</a>
-                        
-                        <a href="#objectives">Objectives</a>
-                        <a href="#literature">Literature</a>
+                <input type="text" id="searchInput" placeholder="Search..." />
+                <i id="searchIcon" class="fas fa-search"></i>
+            </div>
+    
+            <ul class="nav-menu">
+                <li><a href="index.html#top" class="active">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li class="dropdown">
+                    <a href="#project">Project</a>
+                    <div class="dropdown-content">
+                        <!-- Dropdown items -->
+                        <div class="dropdown-column">
+                            <a href="#research_problem">Research Problem</a>
+                            <a href="#objectives">Objectives</a>
+                            <a href="#literature">Literature</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <a href="#methodology">Methodology</a>
+                            <a href="#milestones">Milestones</a>
+                            <a href="#documents">Documents</a>
+                        </div>
                     </div>
-                    <div class="dropdown-column">
-                        
-                        <a href="#methodology">Methodology</a>
-                        <a href="#milestones">Milestones</a>
-                        <a href="#documents">Documents</a>
-                    </div>
-                </div>
-            </li>
-            
-            <li><a href="index.html#team">Team</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-            
+                </li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+    
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
+
+
+
+
+
+
 
     <section id="project" class="hero">
         <div class="hero-content">
@@ -66,7 +70,7 @@
                 to enhance safety and support in educational settings.</h3>
             
             
-            <br><br><br>
+            <br><br>
            
 
             

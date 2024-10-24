@@ -141,3 +141,35 @@ function scrollToTop() {
         behavior: "smooth"
     });
 }
+
+
+
+//mobile responsive scripts
+
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+const navigationLinks = document.querySelectorAll('nav ul li a'); // Renamed variable
+
+function hideMenu() {
+    navMenu.classList.remove('active');
+}
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
+
+// Hide menu when a tab is clicked
+navigationLinks.forEach(link => { // Use the renamed variable
+    link.addEventListener('click', hideMenu);
+});
+
+// Hide menu when clicking outside of the nav menu
+window.addEventListener('click', (event) => {
+    if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
+        hideMenu();
+    }
+});
+
+
+
+

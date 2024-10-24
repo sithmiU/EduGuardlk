@@ -15,6 +15,10 @@ body {
     line-height: 1.6;
 }
 
+
+
+
+
 header {
     color: #333;
     padding-left: 60px;
@@ -199,7 +203,7 @@ nav ul li a.active::after {
     box-shadow: 0 0 5px rgba(0, 167, 196, 0.3);
     border-radius: 30px; /* Rounded edges */
     outline: none; /* Remove default outline */
-    width: 350px; /* Adjust width as needed */
+    width: 340px; /* Adjust width as needed */
     transition: box-shadow 0.4s ease, border 0.4s ease; /* Transition effect for smooth change */
 }
 
@@ -238,6 +242,63 @@ nav ul li a.active::after {
 .search-bar input:hover + i {
     background-color: #37BE9E; /* Darker green on input focus or hover */
 }
+
+
+
+
+/* Default Styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Hide the menu and search bar below 1000px */
+@media screen and (max-width: 1000px) {
+    header{
+padding: 10px 40px;
+
+    }
+
+    .search-bar, .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 20px;
+        color: #333;
+    }
+
+    /* Show menu when hamburger is clicked */
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        
+        background-color: white;
+        padding: 20px;
+        width: 100%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+    .dropdown-content{
+        width: 100%; 
+        margin-top: 10px;
+    }
+    nav .logo img {
+        width: 108px;
+        height: 30px;
+    }
+}
+
+
+
+
 
 .hero {
     height: 100vh;
@@ -301,11 +362,61 @@ p{
     background-color: #33828F; /* New color on hover */
 }
 
+
+
+
+/* For screens below 1000px */
+@media (max-width: 1000px) {
+    .hero {
+        height: auto; /* Adjust height based on content */
+        background-image: none; /* Remove the banner background image */
+        background: linear-gradient(135deg, #ebf8f4, #e7ebeb); /* Add linear gradient */
+        padding: 60px 40px;
+        justify-content: center; /* Center content horizontally */
+        text-align: center; /* Center the text */
+    }
+
+    .hero-content h1 {
+        font-size: 28px; /* Adjust font size for screens below 1000px */
+    }
+
+    .hero-content h3 {
+        font-size: 14px; /* Adjust font size for screens below 1000px */
+    }
+
+    .cta-button {
+        margin: 20px auto; /* Center the button */
+    }
+}
+
+/* For screens below 600px */
+@media (max-width: 600px) {
+    
+
+    .hero-content h1 {
+        font-size: 20px; /* Adjust font size for screens below 600px */
+    }
+
+    .hero-content h3 {
+        font-size: 12px; /* Adjust font size for screens below 600px */
+    }
+
+    .cta-button {
+        font-size: 12px; /* Adjust button font size */
+        padding: 0.6rem 1.5rem; /* Adjust button padding for smaller screens */
+    }
+}
+
+
+
+
+
+
 .about-column1, .about-column2 {
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 50px;
-    height: 100vh; /* Set height for each column */
+    
     display: flex; /* Use flex to layout children */
     background-size: cover;
     background-position: center;
@@ -396,6 +507,86 @@ p{
     
 }
 
+
+
+
+/* Media queries for screens below 1000px */
+@media (max-width: 1000px) {
+    .about-column1, .about-column2 {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center; /* Center text */
+        padding: 60px 40px;
+    }
+
+    .about-column1 .about-right, .about-column2 .about-right {
+        max-width: 100%; /* Make text take full width */
+        text-align: center; /* Center text in about-column1 */
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .about-column1 .about-left, .about-column2 .about-left {
+        max-width: 100%; /* Make images take full width */
+        margin-bottom: 20px; /* Space between image and text */
+    }
+
+    .about-image1, .about-image2 {
+        max-width: 80%; /* Limit image width */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center the image */
+    }
+    .about-column1 h1, .about-column2 h1 {
+        font-size: 28px; /* Reduce heading size */
+    }
+
+    .about-column1 p, .about-column2 p {
+        font-size: 14px; /* Reduce paragraph text size */
+    }
+
+     /* Ensure the ul li is left-aligned even on small screens */
+     .about-column1 .about-right ul li, .about-column2 .about-right ul li {
+        text-align: left; /* Left-align list items */
+        font-size: 12px; /* Reduce font size for list items */
+    }
+
+    .about-column1 .about-right ul li i, .about-column2 .about-right ul li i {
+        font-size: 12px; /* Adjust icon size */
+    }
+}
+
+/* Media queries for screens below 600px */
+@media (max-width: 600px) {
+    .about-column1 .about-right, .about-column2 .about-right {
+        font-size: 12px; /* Further reduce font size */
+        text-align: center; /* Ensure text is centered */
+    }
+
+    .about-image1, .about-image2 {
+        max-width: 100%; /* Make images take full width */
+        margin: 0 auto; /* Center images */
+    }
+
+    
+
+    .about-column1 h1, .about-column2 h1 {
+        font-size: 20px; /* Further reduce heading size */
+    }
+
+    .about-column1 p, .about-column2 p {
+        font-size: 12px; /* Further reduce paragraph text size */
+    }
+        /* Further reduce font size for ul li on small screens */
+        .about-column1 .about-right ul li, .about-column2 .about-right ul li {
+            font-size: 10px; /* Reduce font size for list items */
+            text-align: left; /* Ensure list items are left-aligned */
+        }
+    
+        .about-column1 .about-right ul li i, .about-column2 .about-right ul li i {
+            font-size: 10px; /* Adjust icon size */
+        }
+}
+
+
+
 /* Style the key features section */
 .features-container h2 {
     margin-top: 10px;
@@ -414,13 +605,15 @@ p{
 
 .features {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
     margin: 0 auto;
 }
 
 .feature {
-    flex: 1;
+    flex: 1 1 220px; /* Flex grow, shrink, and basis */
+    min-width: 220px; /* Minimum width for each feature */
     background: #f9f9f9;
     border-radius: 20px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); /* Initial subtle shadow */
@@ -455,7 +648,6 @@ p{
     text-align: center; /* Center the text */
     text-decoration: none; /* Remove underline from the link */
 }
-
 .read-more i {
     margin-left: 8px; /* Space between text and icon */
     transition: transform 0.4s ease; /* For the arrow animation */
@@ -468,6 +660,51 @@ p{
 .read-more:hover i {
     transform: translateX(5px); /* Move the arrow icon on hover */
 }
+
+
+
+/* Media queries for responsive design */
+@media (max-width: 1000px) {
+    .features {
+        flex-direction: row; /* Keep row layout */
+    }
+
+    .feature {
+        flex: 1 1 calc(50% - 10px); /* Adjust for 2x2 layout */
+        min-width: 200px; /* Minimum width for 2x2 layout */
+    }
+    .features-container h1 {
+        font-size: 28px;
+    }
+
+    .features-container h4 {
+        font-size: 14px;
+    }
+    .features-container {
+        padding: 60px 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .features {
+        flex-direction: column; /* Stack vertically */
+    }
+
+    .feature {
+        flex: 1 1 100%; /* Full width for each feature */
+        min-width: auto; /* Remove minimum width */
+    }
+
+    .features-container h1 {
+        font-size: 20px;
+    }
+
+    .features-container h4 {
+        font-size: 12px;
+    }
+}
+
+
 
 .technologies-section {
     padding-top: 100px;
@@ -526,7 +763,7 @@ p{
 .technologies-grid .tech-item::before, .technologies-grid .tech-item::after {
     content: "";
     position: absolute;
-    background-color: #444;
+    background-color: #444444;
 }
 
 /* Vertical lines */
@@ -545,6 +782,54 @@ p{
     left: 0;
 }
 
+@media (max-width: 1000px) {
+    .technologies-section {
+        padding: 60px 40px;
+    }
+    .technologies-section h1 {
+        font-size: 28px; /* Adjust heading size if needed */
+    }
+
+    .technologies-section h4 {
+        font-size: 14px; /* Adjust subtitle size if needed */
+    }
+}
+
+
+/* Media Query for screens smaller than 600px */
+@media (max-width: 600px) {
+    
+    .technologies-grid {
+        grid-template-columns: repeat(3, 1fr); /* Change to 3 columns */
+        grid-template-rows: repeat(4, auto); /* Change to 4 rows */
+    }
+
+    .tech-item img {
+        width: 40px; /* Reduce image size */
+    }
+
+    .tech-item p {
+        font-size: 12px; /* Reduce font size */
+    }
+
+    .technologies-section h1 {
+        font-size: 20px; /* Adjust heading size if needed */
+    }
+
+    .technologies-section h4 {
+        font-size: 12px; /* Adjust subtitle size if needed */
+    }
+    .technologies-grid .tech-item::before, .technologies-grid .tech-item::after {
+        
+        opacity: 0;
+    }
+    .tech-item {
+        
+        padding: 10px;
+        
+    }
+    
+}
 
 
 
@@ -671,6 +956,89 @@ p{
 }
 
 
+
+/* Media query for screens 1000px and below */
+@media (max-width: 1000px) {
+    .team-row {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center-align items */
+        
+    }
+
+    .team-text {
+        margin-right: 0; /* Remove margin for smaller screens */
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .team-members {
+        display: flex; /* Keep it flex for the first two members */
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center the first two members */
+        gap: 20px; /* Space between the members */
+        width: 100%; /* Full width */
+    }
+
+    .team-member {
+        flex: 1 0 calc(50% - 20px); /* 2x1 layout (50% width) */
+        max-width: 300px; /* Optional: Limit width of each card */
+        
+    }
+
+    .team-members second-row {
+        display: grid; /* Change to grid for layout */
+        grid-template-columns: repeat(2, 1fr); /* 2x2 layout for the next four members */
+        gap: 20px; /* Space between team member cards */
+        
+    }
+
+    .about-section::before {
+        background: #f0f0f0; /* Change background to grey */
+    }
+
+    /* Reduce font sizes for text elements in the about section */
+    .about-section h1 {
+        font-size: 28px;
+    }
+
+    .about-section h4 {
+        font-size: 14px;
+    }
+
+    .about-section {
+        padding: 60px 40px;
+    }
+    
+
+}
+
+/* Media query for screens 600px and below */
+@media (max-width: 600px) {
+    .team-members {
+        flex-direction: column; /* Stack team members vertically */
+        align-items: center; /* Center-align members */
+    }
+
+    .team-member {
+        flex: 1 0 100%; /* 1x2 layout (100% width) */
+        max-width: none; /* Remove max width */
+       
+    }
+
+    .second-row {
+        grid-template-columns: 1fr; /* 1x4 layout for the next four members */
+    }
+
+    .about-section h1 {
+        font-size: 20px;
+    }
+
+    .about-section h4 {
+        font-size: 12px;
+    }
+}
+
+
+
 .contact {
     background-image: url('../images/contact_bg.png');
     padding-top: 120px;
@@ -694,18 +1062,21 @@ p{
 .contact-cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px; /* Space between the two cards */
 }
-
 .contact-card {
     background-color: #f9f9f9;
     opacity: 0.95;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 320px;
-    display: flex;
-    align-items: center;
+    width: 280px; /* Fixed width for the card */
+    height: 100px; /* Reduced height to fit the side-by-side layout */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center align items vertically */
+    justify-content: flex-start; /* Align items to the start of the card */
+    
 }
 
 .contact-icon {
@@ -742,6 +1113,67 @@ p{
 .contact-info a:hover {
     color: #37BE9E;
 }
+
+/* Media Query for screens smaller than 1000px */
+@media (max-width: 1000px) {
+    .contact h1 {
+        font-size: 28px; /* Reduce font size */
+    }
+
+    .contact p {
+        font-size: 12px; /* Reduce font size */
+    }
+    .contact h3 {
+        font-size: 14px; /* Further reduce font size */
+    }
+    .contact-card {
+        padding: 15px; /* Optional: Adjust padding for smaller screens */
+        height: 80px;
+    }
+    .contact {
+        padding: 60px 40px;
+    }
+    .contact-icon {
+        width: 30px;
+        height: 30px;
+       
+    }
+}
+
+/* Media Query for screens smaller than 800px */
+@media (max-width: 800px) {
+    .contact-cards {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards */
+    }
+    .contact-card {
+        width: 250px;
+    }
+}
+
+/* Media Query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .contact h1 {
+        font-size: 20px; /* Further reduce font size */
+    }
+    .contact h3 {
+        font-size: 12px; /* Further reduce font size */
+    }
+
+    .contact p {
+        font-size: 10px; /* Further reduce font size */
+    }
+    .contact-icon {
+        width: 30px;
+        height: 30px;
+       
+    }
+    .contact-card {
+        height: 70px;
+    }
+    
+}
+
 
 
 
@@ -851,6 +1283,72 @@ footer {
     color: #fff;
 }
 
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .footer-right {
+        display: none; /* Hide the right section */
+    }
+    
+    .footer-left {
+        width: 100%; /* Make left section take full width */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align the content */
+    }
+
+    .footer-description {
+        font-size: 12px; /* Further adjust font size */
+    }
+    .footer-bottom p {
+        
+        font-size: 12px;
+        
+    }
+    footer {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+    }
+    .footer-logo {
+        width: 110px;
+        height: 30px;
+        margin-bottom: 15px;
+    }
+    .social-links i {
+        font-size: 14px; /* Adjust the icon size as needed */
+    }
+    .social-links a {
+        
+        width: 25px;
+        height: 25px;
+    }  
+    
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align the content */
+    }
+    
+    .footer-left {
+        width: 100%; /* Make left section take full width */
+    }
+
+    .footer-right h3,
+    .quick-links ul li a {
+        font-size: 12px; /* Adjust font size */
+    }
+    .footer-bottom p {
+        
+        font-size: 10px;
+        
+    }
+}
+
+
 .scroll-to-top {
     display: none; /* Initially hidden */
     position: fixed;
@@ -877,6 +1375,22 @@ footer {
 .scroll-to-top:hover {
     background-color: #59c9af; /* Darker green on hover */
 }
+
+
+@media (max-width: 600px) {
+    .scroll-to-top {
+        
+        bottom: 30px;
+        right: 30px;
+        width: 40px;
+    height: 40px;
+    }
+    
+    .scroll-to-top i {
+        font-size: 18px;
+    }
+}
+
 
 ::-webkit-scrollbar {
     width: 6px; /* Width of the scrollbar track */
